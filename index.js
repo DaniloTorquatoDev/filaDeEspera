@@ -2,10 +2,16 @@ let menu = "";
 let fila = [];
 
 do {
+
+
+    let pascientes = "";
+    for (let i = 0; i < fila.length; i++) {
+    pascientes += `${i + 1}. ${fila[i]}\n`;
+}
 menu = prompt(`
 
 CONSULTORIO MÉDICO
-Pascientes na fila: ${fila.length}
+Pascientes na fila: ${pascientes}
 
 Escolha uma opção:
 1. Adicionar um nome na fila
